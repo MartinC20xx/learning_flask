@@ -19,6 +19,6 @@ setup(
     install_requires=['Flask'], # might need to add systeminfo here.
     #also may need to alter manifest file to include templates and static folders
     entry_points={
-          "console_scripts":["comp30670_learning_flask=app:app.py"]})
+          "console_scripts":["comp30670_learning_flask=app:app"]})
 #check this entry point once issue with run.py is resolved. 
 
