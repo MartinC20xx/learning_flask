@@ -14,7 +14,11 @@ setup(
     author_email='martin.casey@ucdconnect.ie',
     url='https://github.com/MartinC20xx/learning_flask',
     packages=['app'],
+    include_package_data=True,
+    zip_safe=False,
+    install_requires=['Flask'], # might need to add systeminfo here.
+    #also may need to alter manifest file to include templates and static folders
     entry_points={
-          "console_scripts":['comp30670_learning_flask=app.run.py']})
+          "console_scripts":["comp30670_learning_flask=app.run(host='0.0.0.0', port=5001)"]})
 #check this entry point once issue with run.py is resolved. 
 
